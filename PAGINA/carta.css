@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffe0ec, #ffc0cb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .card {
+    width: 320px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .card-front, .card-inside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: transform 0.6s;
+  }
+
+  .card-front {
+    background: #ff69b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .card-inside {
+    background: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card:hover .card-front {
+    transform: rotateY(180deg);
+  }
+
+  .card:hover .card-inside {
+    transform: rotateY(0deg);
+  }
+
+  .back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;body {
+  margin: 0;
+  padding: 0;
+  background-color: #fbeffb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.envelope {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #d94f70;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.envelope.open {
+  height: 400px;
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #ff6f91;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top;
+  transition: transform 1s ease;
+}
+
+.envelope.open .flap {
+  transform: rotateX(180deg);
+}
+
+.letter {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+
+.envelope.open .letter {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.letter-content h1 {
+  margin-top: 0;
+  color: #d94f70;
+  text-align: center;
+}
+
+.letter-content p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Botón de regreso */
+.back-button {
+  margin-top: 40px;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+  }
+  
+  .back-button.bottom {
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  

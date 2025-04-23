@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY CHIKISTRIKIS SAGANSKU</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#Start">Start</a></li>
+      <li><a href="#Moments">Moments</a></li>
+      <li><a href="#Love_letters">Love letters</a></li>
+      <li><a href="#Contact">Contact</a></li>
+</ul>
+  </nav>
+
+  
+  <!-- CONTENIDO -->
+  
+    <div id="image-container">
+      <img src="/FOTOS/682b42c7345846bd8a256712483bb5c9.jpg" alt="Imagen chida" id="imagen-chida">
+      <img src="/FOTOS/IMG-20250327-WA0009.jpg" alt="Imagen Segunda" id="imagen-Segunda">
+      <img src="/FOTOS/IMG-20250408-WA0011.jpg" alt="Imagen Tercera" id="imagen-Tercera">
+      <img src="/FOTOS/IMG-20250409-WA0015.jpg" alt="Imagen Cuarta" id="imagen-Cuarta">
+      <img src="/FOTOS/IMG-20250409-WA0016.jpg" alt="Imagen Quinta" id="imagen-Quinta">
+      <img src="/FOTOS/IMG-20250409-WA0017.jpg" alt="Imagen Sexta" id="imagen-Sexta">
+    </div>
+    
+   
+  <!--MUSICA-->
+  <div id="musique">
+    <button id="restartTrack">
+      <i class="fas fa-rotate-left"></i>
+    </button>
+    <button id="prevTrack">
+      <i class="fas fa-backward"></i>
+    </button>
+    <button id="togglePlay">
+      <i class="fas fa-play"></i>
+    </button>
+    <button id="nextTrack">
+      <i class="fas fa-forward"></i>
+    </button>
+    <audio id="audioPlayer">
+      <source src="/MUSICA/Selena Gomez, benny blanco - How Does It Feel To Be Forgotten (Official Lyric Video).mp3" type="audio/mpeg">
+    </audio>
+  </div>  
+  </section>
+
+  <!-- HERO -->
+  <section class="hero" id="Start">
+    <h2><p class="tagline">Discover the treasure trove of love and memories waiting for you.</p></h2>
+    <h1>WELCOME MY CHIKISTRIKIS SAGANSKU <span class="diamond">💎</span></h1>
+    <h2><p class="description">
+      A romantic journey through heartfelt gifts, cherished galleries, and timeless love letters.  
+      Let your emotions shine and create unforgettable connections.
+    </p></h2>
+    
+    <a href="subida.html">
+      <button>CLICK ME</button>
+    </a>
+    
+
+  <!-- INFO SECTION -->
+  <section class="section-info" id="Moments">
+    <h3 class="mini-title">Unfold Moments of Magic</h3>
+    <h2>A Treasure of Love Awaits</h2>
+    <h3><p>💎  MY CHIKISTRIKIS SAGANSKU is your destination for celebrating love and creating lasting memories.</p>
+    <p>Explore the button by clicking on it our moments together trying to face the distance that we remain together and do not feel together</p></h3>
+    <button onclick="Prick_me_and_you_will_know()">Prick me and you will know</button>
+  </section>
+
+  <!-- LOVE LETTERS SECTION -->
+  <section class="section-highlight" id="Love_letters">
+    <h3 class="mini-title">Share Your Heart</h3>
+    <h2>Celebrate Love in Every Form</h2>
+    <h3><p>
+        Even though you're far away, I feel you here,
+        in every breath that rises from me.
+        Distance doesn't erase what the soul has embraced,
+        because true love has always found.
+    </p></h3>
+
+   <!-- Sección Destacada (donde va el botón "HERE") -->
+<ul class="features">
+  <h3>
+    <li>🎁 <strong>Personalized Gifts:</strong> You are a gift fallen from heaven given thanks to God</li>
+    <li>🖼️ <strong>Cherished Galleries:</strong> We will have magical moments later apart from the ones we have. ;*</li>
+    <li>💌 <strong>Timeless Letters:</strong> Press the button that says "HERE"</li> 
+  </h3>
+</ul>
+
+<!-- Botón "HERE" que redirige a otra página y la carta -->
+<div class="here-container">
+  <a href="Carta.html" class="HERE" target="_blank">HERE</a>
+</div>
+
+    <!-- Contenedor del carrusel / Carousel container -->
+  <div class="carousel-container">
+   <!-- Contenedor de imagen o video / Container for image or video -->
+   <div class="carousel" id="carousel">
+      <img id="carousel-image" src="/FOTOS2/" alt="Imagen 1" />
+    </div>
+
+    <!-- Botones para navegar / Navigation buttons -->
+    <div class="buttons">
+      <button onclick="previousImage()">← Anterior / Previous</button>
+      <button onclick="restartCarousel()">⟳ Empezar / Return</button>
+      <button onclick="nextImage()">Siguiente / Next →</button>
+    </div>
+  </div>
+
+  <!-- Contenedor del video / Video container -->
+  <div class="video-container" id="video-container">
+    <video controls>
+      <source src="/FOTOS2/GSUO5882.MP4" type="video/mp4" />
+      Tu navegador no soporta el video / Your browser does not support the video.
+    </video>
+  </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="Contact">
+    <h2><span class="script">Stay Connected with</span> 💎 MY CHIKISTRIKIS SAGANSKU</h2>
+    <h3><p class="contact-text">We’re here to help you celebrate love and create lasting memories. Reach out to us for inquiries or support.</p></h3>
+    <div class="contact-info">
+      <div>
+        <div class="icon-circle"><i class="fas fa-clock"></i></div>
+        <h4>Office Hours</h4>
+        <p>Monday-Friday 10:00 am to 8:00 pm</p>
+      </div>
+      <div>
+        <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+        <h4>Our Address</h4>
+        <p>123 Romantic Blvd. Love City, 54321</p>
+      </div>
+      <div>
+        <div class="icon-circle"><i class="fas fa-phone"></i></div>
+        <h4>Contact Us</h4>
+        <p>+1-800-LOVE +1-800-SAYANG</p>
+        <p>+1-796-LOVE +1-796-BABUL</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Our Story</a>
+      <a href="#">Terms of Love</a>
+      <a href="#">Privacy Promise</a>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+      <p>💎 MY CHIKISTRIKIS SAGANSKU - Where Love Finds Its Treasure © 2023, All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

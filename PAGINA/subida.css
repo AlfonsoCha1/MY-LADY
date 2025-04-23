@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background: radial-gradient(#000, #111);
+    font-family: 'Pacifico', cursive;
+    color: white;
+  }
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .corazon {
+    font-size: 4rem;
+    animation: latido 1s infinite;
+  }
+  
+  .mensaje {
+    font-size: 3rem;
+    color: #ff69b4;
+    text-shadow: 0 0 20px #fff;
+    animation: aparecer 2s ease-out forwards;
+    opacity: 0;
+    margin-top: 1rem;
+  }
+  
+  @keyframes latido {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+  }
+  
+  @keyframes aparecer {
+    to { opacity: 1; }
+  }
+  
+  .btn-regresar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .btn-regresar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .btn-regresar button:hover {
+    background-color: #ff85c1;
+    transform: scale(1.05);
+  }
+  
